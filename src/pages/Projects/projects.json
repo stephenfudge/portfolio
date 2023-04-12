@@ -5,7 +5,7 @@
     "deployed": "https://github.com/danielfu13/flying-kittens17",
     "repo": "https://danielfu13.github.io/flying-kittens17",
     "description": "A website to help with conversation starters in a Post-Pandemic world.",
-    "technologies": "HTML5, CSS3, Bulma, JavaScript, Third Party APIs",
+    "technologies": "HTML5, CSS3, Bulma, JavaScript, Third Party APIs"
 },
 {
     "id": 2,
@@ -14,7 +14,7 @@
     "deployed": "https://stockerinventory.herokuapp.com/",
     "repo": "https://github.com/SuedePritch/furry-leftover-broccoli.git",
     "description": "An inventory management system that integrates seamlessly with a fully functional eCommerce site",
-    "technologies": "MongoDB, Express, React, Node, GraphQL, Apollo, JWT authentication and authorization",
+    "technologies": "MongoDB, Express, React, Node, GraphQL, Apollo, JWT authentication and authorization"
 },
 {
     "id": 3,
@@ -23,7 +23,7 @@
     "deployed": "https://vigilant-octo-lamp.herokuapp.com/",
     "repo": "https://github.com/stephenfudge/vigilant-octo-lamp",
     "description": "A fan site for 2022 Qatar FIFA World Cup",
-    "technologies": "MySQL, Express, Node, JavaScript, HandlebarsJS, CSS",
+    "technologies": "MySQL, Express, Node, JavaScript, HandlebarsJS, CSS"
 },
 {
     "id": 4,
@@ -32,7 +32,7 @@
     "deployed": "https://github.com/stephenfudge/stunning-robot",
     "repo": "https://stephenfudge.github.io/stunning-robot/",
     "description": "A website to check the 5 day forecast for any city",
-    "technologies": "JavaScript, Third Party APIs",
+    "technologies": "JavaScript, Third Party APIs"
 },
 
 {
@@ -41,6 +41,8 @@
     "image": "dayPlanner",
     "deployed": "https://stephenfudge.github.io/glowing-octo-waffle/",
     "repo": "https://github.com/stephenfudge/glowing-octo-waffle",
+    "description": "A planner for 9-5 days",
+    "technologies": "HTML, CSS3, moment.js"
 },
 
 {
@@ -48,5 +50,8 @@
     "title": "JavaScript Quiz",
     "image": "quiz",
     "deployed": "https://stephenfudge.github.io/furry-umbrella/",
-    "repo": "https://github.com/stephenfudge/furry-umbrella"
-}]
+    "repo": "https://github.com/stephenfudge/furry-umbrella",
+    "description": "A timed quiz for JavaScript in JavaScript",
+    "technologies": "HTML, CSS3, JavaScript"
+}
+]
