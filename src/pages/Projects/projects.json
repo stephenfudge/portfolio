@@ -1,7 +1,7 @@
 [{
     "id": 1,
     "title": "Conversation Starters",
-    "image": "conversations",
+    "image": "./images/projects/conversations.png",
     "deployed": "https://github.com/danielfu13/flying-kittens17",
     "repo": "https://danielfu13.github.io/flying-kittens17",
     "description": "A website to help with conversation starters in a Post-Pandemic world.",
@@ -10,7 +10,7 @@
 {
     "id": 2,
     "title": "Stocker Inventory Management",
-    "image": "stocker",
+    "image": "./images/projects/stocker.png",
     "deployed": "https://stockerinventory.herokuapp.com/",
     "repo": "https://github.com/SuedePritch/furry-leftover-broccoli.git",
     "description": "An inventory management system that integrates seamlessly with a fully functional eCommerce site",
@@ -19,7 +19,7 @@
 {
     "id": 3,
     "title": "FIFA Fan Site",
-    "image": "fifa",
+    "image": "./images/projects/fifa.png",
     "deployed": "https://vigilant-octo-lamp.herokuapp.com/",
     "repo": "https://github.com/stephenfudge/vigilant-octo-lamp",
     "description": "A fan site for 2022 Qatar FIFA World Cup",
@@ -28,7 +28,7 @@
 {
     "id": 4,
     "title": "Weather Dashboard",
-    "image": "weather",
+    "image": "./images/projects/weather.png",
     "deployed": "https://github.com/stephenfudge/stunning-robot",
     "repo": "https://stephenfudge.github.io/stunning-robot/",
     "description": "A website to check the 5 day forecast for any city",
@@ -38,7 +38,7 @@
 {
     "id": 5,
     "title": "9-5 Day Planner",
-    "image": "dayPlanner",
+    "image": "./images/projects/dayPlanner.png",
     "deployed": "https://stephenfudge.github.io/glowing-octo-waffle/",
     "repo": "https://github.com/stephenfudge/glowing-octo-waffle",
     "description": "A planner for 9-5 days",
@@ -48,7 +48,7 @@
 {
     "id": 6,
     "title": "JavaScript Quiz",
-    "image": "quiz",
+    "image": "./images/projects/quiz.png",
     "deployed": "https://stephenfudge.github.io/furry-umbrella/",
     "repo": "https://github.com/stephenfudge/furry-umbrella",
     "description": "A timed quiz for JavaScript in JavaScript",
