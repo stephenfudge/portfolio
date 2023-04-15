@@ -1,6 +1,7 @@
 .social-icons {
     list-style: none;
     /* display:inline-block; */
+    color: #0f7173ff;
 }
 
 .social-icons li{
@@ -11,5 +12,14 @@
 .icons:hover{
     /* color: #ffc107; */
     color: greenyellow;
+    
     /* background-color: hotpink; */
+}
+
+.icons icon:hover {
+  animation: spin 0.5s 1 forwards;
+}
+
+.bg{
+    background-color: #320d6dff;
 }

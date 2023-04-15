@@ -1,0 +1,9 @@
+.name{
+    color: #e365c1ff;
+    font-size: 1.5rem;
+}
+
+button:hover{
+    background-color: #0f7173ff;
+    color: #e365c1ff
+}

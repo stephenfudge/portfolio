@@ -1,3 +1,5 @@
+import './navbar.css';
+
 export default function NavBar(props) {
   function pageChange(event) {
     const id = event.target.id;
@@ -5,7 +7,7 @@ export default function NavBar(props) {
   }
 
   return (
-    <div>
+    <div className="py-5">
       <div className="navbar bg-base-100 lg:space-between">
         <div className="navbar-start">
             {/* dropdown for smaller screens */}
@@ -45,7 +47,7 @@ export default function NavBar(props) {
             </ul>
           </div>
 
-          <a href="/" className="btn btn-ghost normal-case text-xl text-secondary">
+          <a href="/" className="btn btn-ghost normal-case text-xl text-secondary name">
             Stephen Fudge
           </a>
         </div>
