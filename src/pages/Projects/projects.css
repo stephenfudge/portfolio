@@ -3,3 +3,18 @@
     width: 100%;
     object-fit: cover;
 }  
+
+.project-body{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 1rem;
+    grid-auto-flow: row;
+    width: 100%;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 600px){
+    .project-body{
+      grid-template-columns: repeat(3,1fr);
+    }
+  }

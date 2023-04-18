@@ -7,7 +7,7 @@ export default function ProjectCard(props) {
       <div className="card-body">
         <h2 className="card-title">{props.title}</h2>
         <p>{props.description}</p>
-        <p>{props.technologies}</p>
+        {/* <p>{props.technologies}</p> */}
         <div className="card-actions justify-center py-3">
           <a href={props.repo} target="_blank" rel="noopener noreferrer">
             <button className="btn btn-primary">Repository</button>
@@ -18,5 +18,6 @@ export default function ProjectCard(props) {
         </div>
       </div>
     </div>
+
   );
 }
