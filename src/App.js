@@ -26,7 +26,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App h-full bg-persian text-rose">
       <Navbar page={page} setPage={setPage} />
       <RenderPage />
       <Footer />

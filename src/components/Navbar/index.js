@@ -53,7 +53,7 @@ export default function NavBar(props) {
         </div>
         {/* links for larger screens */}
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1" id={props.page}>
+          <ul className="menu menu-horizontal text-rose px-1" id={props.page}>
             <li>
               <button id="about" onClick={pageChange}>
                 About Me
