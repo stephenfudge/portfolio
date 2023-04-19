@@ -1,23 +1,20 @@
 export default function ProjectCard(props) {
   return (
-    <div className="card lg:card-side bg-base-100 shadow-xl py-3">
-      <figure>
-        <img src={props.image} alt={props.title} className="project-image"/>
-      </figure>
-      <div className="card-body">
-        <h2 className="card-title">{props.title}</h2>
-        <p>{props.description}</p>
-        {/* <p>{props.technologies}</p> */}
-        <div className="card-actions justify-center py-3">
-          <a href={props.repo} target="_blank" rel="noopener noreferrer">
-            <button className="btn btn-primary">Repository</button>
-          </a>
-          <a href={props.deployed} target="_blank" rel="noopener noreferrer">
-            <button className="btn btn-primary">Deployed</button>
-          </a>
+       <div className='project-body'>
+            <li className='project-list'>
+                <div>
+                <div className='item'>
+                    <h2 className='project-name text-2xl text-bold underline'><a href={props.deployed} target="_blank" rel="noopener noreferrer">{props.title}</a></h2><br />
+                    <h3 className="project-description">{props.description}</h3><br />
+                    <img className='project-images' src={props.image} alt='screenshot of {project.title}'/> <br />
+                    <div className="btn-group btn-group-vertical lg:btn-group-horizontal">
+                    <a href={props.deployed} target="_blank" rel="noopener noreferrer"><button className="btn btn-outline-smoky mr-2">See it live!</button></a><br />
+                    <a href={props.repo} target="_blank" rel="noopener noreferrer"><button className="btn btn-outline-rose">Take a look at the GitHub Repository</button></a>
+                    </div>
+                    <br/><br/>
+                </div>
+                </div>
+            </li>
         </div>
-      </div>
-    </div>
-
   );
 }

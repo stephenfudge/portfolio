@@ -1,7 +1,6 @@
-.project-image{
+.project-images{
     height: 200px;
     width: 100%;
-    object-fit: cover;
 }  
 
 .project-body{
@@ -10,11 +9,21 @@
     grid-gap: 1rem;
     grid-auto-flow: row;
     width: 100%;
-  justify-content: center;
+    justify-content: center;
+}
+
+.item{
+  text-align: center;
+  padding-bottom: 1%;  
+}
+
+li{
+  list-style-type: none;
 }
 
 @media only screen and (min-width: 600px){
     .project-body{
-      grid-template-columns: repeat(3,1fr);
+      grid-template-columns: repeat(2,1fr);
+      margin: 0 8%;
     }
   }
