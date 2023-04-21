@@ -8,7 +8,7 @@ export default function NavBar(props) {
 
   return (
     <div className="py-5">
-      <div className="navbar bg-base-100 lg:space-between">
+      <div className="navbar lg:space-between">
         <div className="navbar-start">
             {/* dropdown for smaller screens */}
           <div className="dropdown">
@@ -53,9 +53,9 @@ export default function NavBar(props) {
         </div>
         {/* links for larger screens */}
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal text-rose px-1" id={props.page}>
+          <ul className="menu menu-horizontal text-rose  px-1" id={props.page}>
             <li>
-              <button id="about" onClick={pageChange}>
+              <button className="" id="about" onClick={pageChange}>
                 About Me
               </button>
             </li>

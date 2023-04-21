@@ -5,7 +5,7 @@ import "./footer.css";
 
 export default function Footer() {
   return (
-    <footer className="py-10 bg">
+    <footer className="pt-9">
       <div className="">
         <p id="arr">&copy; 2023 Stephen Fudge. All Rights Reserved.</p>
         <ul className="social-icons">

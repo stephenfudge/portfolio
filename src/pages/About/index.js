@@ -2,11 +2,11 @@ import "./about.css";
 
 export default function About() {
   return (
-    <div className="grid grid-cols-2 gap-2">
+    <div className="grid grid-cols-2 gap-2 py-14">
       <img
         src="./images/stephen.png"
         alt="Stephen Fudge profile pic"
-        className="w-full object-cover col-span-1 flex items-center justify-center my-5"
+        className="w-full object-cover col-span-1 flex items-center justify-center my-5 rounded-full"
         id="image"
       />
       <div className="col-span-1 flex items-center justify-center">
