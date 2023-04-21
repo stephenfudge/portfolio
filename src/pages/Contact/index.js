@@ -1,4 +1,32 @@
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+
+const serviceId = "service_ub0s3l9";
+const templateId = "template_2k96jkk";
+const publics = "S8toVAtI8-CrPQEjy";
+
 export default function Contact() {
+  const form = useRef();
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(serviceId, templateId, form.current, publics).then(
+      (result) => {
+        console.log(result.text);
+        form.current.reset();
+        setIsSubmitted(true);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+  };
+
+  const closePopup = () => {
+    setIsSubmitted(false);
+  };
   return (
     <div>
       <div className="min-h-screen flex flex-col justify-center py-12 px-6 lg:px-8">
@@ -6,7 +34,7 @@ export default function Contact() {
 
         <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
           <div className="bg-gray-100 py-8 px-6 shadow rounded-lg sm:px-10">
-            <form className="mb-0 space-y-6">
+            <form className="mb-0 space-y-6" ref={form} onSubmit={sendEmail}>
               {/* Name section required */}
               <div>
                 <label
@@ -18,7 +46,7 @@ export default function Contact() {
                 <div className="mt-1">
                   <input
                     id="name"
-                    name="name"
+                    name="from_name"
                     type="name"
                     required
                     className="w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500"
@@ -36,9 +64,8 @@ export default function Contact() {
                 <div className="mt-1">
                   <input
                     id="email"
-                    name="email"
+                    name="reply_to"
                     type="email"
-                    autocomplete="email"
                     required
                     className="w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500"
                   />
@@ -67,12 +94,19 @@ export default function Contact() {
                 <button
                   type="submit"
                   className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  value="send"
                 >
                   Submit
                 </button>
               </div>
             </form>
           </div>
+          {isSubmitted && (
+            <div className="">
+              <p>Form submitted</p>
+              <button onClick={closePopup}>Close</button>
+            </div>
+          )}
         </div>
       </div>
     </div>
