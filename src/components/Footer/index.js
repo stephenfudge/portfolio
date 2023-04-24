@@ -7,7 +7,6 @@ export default function Footer() {
   return (
     <footer className="pt-9">
       <div className="">
-        <p id="arr">&copy; 2023 Stephen Fudge. All Rights Reserved.</p>
         <ul className="social-icons">
           <li>
             <a
@@ -28,6 +27,7 @@ export default function Footer() {
             </a>
           </li>
         </ul>
+        <p id="arr">&copy; 2023 Stephen Fudge. All Rights Reserved.</p>
       </div>
     </footer>
   );
