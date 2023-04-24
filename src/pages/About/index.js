@@ -10,7 +10,7 @@ export default function About() {
         id="image"
       />
       <div className="col-span-1 flex items-center justify-center">
-        <p className="text-center text-rose mr-9 pr-9">
+        <p className="text-center text-cyclamen mr-9 pr-9">
           Hey hey, I'm Stephen Fudge a talented and experienced software
           developer with a Full Stack Web Development Certificate from the
           University of Toronto. I have a strong background in technical
