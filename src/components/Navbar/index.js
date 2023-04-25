@@ -1,16 +1,11 @@
-import './navbar.css';
+import "./navbar.css";
 
-export default function NavBar(props) {
-  function pageChange(event) {
-    const id = event.target.id;
-    props.setPage(id);
-  }
-
+export default function NavBar({ activeSection, handleSectionChange }) {
   return (
     <div className="py-5">
       <div className="navbar lg:space-between">
         <div className="navbar-start">
-            {/* dropdown for smaller screens */}
+          {/* dropdown for smaller screens */}
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
@@ -30,48 +25,77 @@ export default function NavBar(props) {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52"
             >
-              <li id="about" onClick={pageChange}>
+              <li id="about" onClick={() => handleSectionChange("about")}>
                 About Me
               </li>
-              <li id="projects" onClick={pageChange}>
+              <li id="projects" onClick={() => handleSectionChange("projects")}>
                 Projects
               </li>
-              <li id="contact" onClick={pageChange}>
+              <li id="contact" onClick={() => handleSectionChange("contact")}>
                 Contact Me
               </li>
-              <li id="resume" onClick={pageChange}>
-                Resume
+              <li id="resume" onClick={() => handleSectionChange("skills")}>
+                Skills
               </li>
             </ul>
           </div>
 
-          <a href="/" className="btn btn-ghost normal-case text-xl text-secondary name">
-            Stephen Fudge
+          <a
+            href="/"
+            className="btn btn-ghost normal-case text-xl text-secondary name"
+          >
+            <span>Stephen Fudge</span>
           </a>
         </div>
         {/* links for larger screens */}
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal text-rose  px-1" id={props.page}>
-            <li>
-              <button className="" id="about" onClick={pageChange}>
+          <ul className="menu menu-horizontal text-rose  px-1">
+            <li className="px-2">
+              <button
+                className={`px- py-1 rounded-lg text-sm font-medium border ${
+                  activeSection === "about"
+                    ? "text-success"
+                    : "text-gray-700"
+                }`}
+                onClick={() => handleSectionChange("about")}
+              >
                 About Me
               </button>
             </li>
-            <li>
-              <button id="projects" onClick={pageChange}>
+            <li className="px-2">
+              <button
+                className={`px-2 py-1 rounded-lg text-sm font-medium border ${
+                  activeSection === "projects"
+                    ? "text-success"
+                    : "text-gray-700"
+                }`}
+                onClick={() => handleSectionChange("projects")}
+              >
                 Projects
               </button>
             </li>
-            <li>
-              <button id="contact" onClick={pageChange}>
-                Contact Me
+            <li className="px-2">
+              <button
+                className={`px-2 py-1 rounded-lg text-sm font-medium border ${
+                  activeSection === "contact"
+                    ? "text-success"
+                    : "text-gray-700"
+                }`}
+                onClick={() => handleSectionChange("contact")}
+              >
+              Contact Me
               </button>
             </li>
-            <li>
-              <button id="resume" onClick={pageChange}>
-                Resume
+            <li className="px-2">
+            <button
+            className={`px-2 py-1 rounded-lg text-sm font-medium border ${
+              activeSection === 'skills' ? 'text-success' : 'text-gray-700'
+            }`}
+            onClick={() => handleSectionChange('skills')}
+          >
+                Skills
               </button>
             </li>
           </ul>

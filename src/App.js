@@ -4,31 +4,29 @@ import "./App.css";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
-import Resume from "./pages/Resume";
+import Skills from "./pages/Skills";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 
 function App() {
-  const [page, setPage] = useState("about");
+  const [activeSection, setActiveSection] = useState("about");
 
-  function RenderPage() {
-    switch (page) {
-      case "about":
-        return <About />;
-      case "projects":
-        return <Projects />;
-      case "contact":
-        return <Contact />;
-      case "resume":
-        return <Resume />;
-      default:
-    }
-  }
+  const handleSectionChange = (section) => {
+    setActiveSection(section);
+  };
 
   return (
-    <div className="App h-full bg-persian text-rose">
-      <Navbar page={page} setPage={setPage} />
-      <RenderPage />
+    <div className="App min-h-screen bg-persian text-rose">
+      <Navbar
+        activeSection={activeSection}
+        handleSectionChange={handleSectionChange}
+      />
+      <main className="container mx-auto mt-8">
+        {activeSection === "about" && <About />}
+        {activeSection === "projects" && <Projects />}
+        {activeSection === "contact" && <Contact />}
+        {activeSection === "skills" && <Skills />}
+      </main>
       <Footer />
     </div>
   );
