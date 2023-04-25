@@ -5,8 +5,8 @@ import "./footer.css";
 
 export default function Footer() {
   return (
-    <footer className="pt-9">
-      <div className="">
+    <footer className=" py-10">
+      <div className="justify-center">
         <ul className="social-icons">
           <li>
             <a
@@ -27,7 +27,7 @@ export default function Footer() {
             </a>
           </li>
         </ul>
-        <p id="arr">&copy; 2023 Stephen Fudge. All Rights Reserved.</p>
+        <p className="pb-10 mb-9"id="arr">&copy; {new Date().getFullYear()} Stephen Fudge. All Rights Reserved.</p>
       </div>
     </footer>
   );
