@@ -1,6 +1,13 @@
+import { useSpring, animated } from "react-spring";
 import "./navbar.css";
 
 export default function NavBar({ activeSection, handleSectionChange }) {
+  const slideInAnimation = useSpring({
+    from: { transform: "translate3d(-100%, 0, 0)", opacity: 0 },
+    to: { transform: "translate3d(10, 0, 0)", opacity: 1 },
+    config: { duration: 1000 },
+  });
+
   return (
     <div className="py-5">
       <div className="navbar lg:space-between">
@@ -46,7 +53,9 @@ export default function NavBar({ activeSection, handleSectionChange }) {
             href="/"
             className="btn btn-ghost normal-case text-xl text-secondary name"
           >
-            <span>Stephen Fudge</span>
+            <animated.span style={slideInAnimation}>
+              Stephen Fudge
+            </animated.span>
           </a>
         </div>
         {/* links for larger screens */}
@@ -55,9 +64,7 @@ export default function NavBar({ activeSection, handleSectionChange }) {
             <li className="px-2">
               <button
                 className={`px- py-1 rounded-lg text-sm font-medium border ${
-                  activeSection === "about"
-                    ? "text-success"
-                    : "text-gray-700"
+                  activeSection === "about" ? "text-success" : "text-gray-700"
                 }`}
                 onClick={() => handleSectionChange("about")}
               >
@@ -79,22 +86,20 @@ export default function NavBar({ activeSection, handleSectionChange }) {
             <li className="px-2">
               <button
                 className={`px-2 py-1 rounded-lg text-sm font-medium border ${
-                  activeSection === "contact"
-                    ? "text-success"
-                    : "text-gray-700"
+                  activeSection === "contact" ? "text-success" : "text-gray-700"
                 }`}
                 onClick={() => handleSectionChange("contact")}
               >
-              Contact Me
+                Contact Me
               </button>
             </li>
             <li className="px-2">
-            <button
-            className={`px-2 py-1 rounded-lg text-sm font-medium border ${
-              activeSection === 'skills' ? 'text-success' : 'text-gray-700'
-            }`}
-            onClick={() => handleSectionChange('skills')}
-          >
+              <button
+                className={`px-2 py-1 rounded-lg text-sm font-medium border ${
+                  activeSection === "skills" ? "text-success" : "text-gray-700"
+                }`}
+                onClick={() => handleSectionChange("skills")}
+              >
                 Skills
               </button>
             </li>
