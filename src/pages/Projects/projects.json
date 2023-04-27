@@ -33,7 +33,7 @@
 {
     "id": 5,
     "title": "9-5 Day Planner",
-    "image": "./images/projects/dayPlanner.png",
+    "image": "./images/projects/dayplanner.png",
     "deployed": "https://stephenfudge.github.io/glowing-octo-waffle/",
     "repo": "https://github.com/stephenfudge/glowing-octo-waffle",
     "description": "A day planner for 9-5 work days"
