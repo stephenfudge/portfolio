@@ -15,6 +15,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Inter", "sans-serif"],
+        name: ["Indie Flower", "curisve"],
       },
     },
   },

@@ -7,3 +7,15 @@ button:hover{
     background-color: #0f7173ff;
     color: #e365c1ff
 }
+
+@media screen and (max-width: 375px) {
+    .navbar {
+      justify-content: space-between;
+    }
+    .navbar__logo {
+      margin-right: 10px;
+    }
+    .navbar__hamburger {
+      margin-left: auto;
+    }
+  }
