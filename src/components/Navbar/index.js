@@ -34,7 +34,8 @@ export default function NavBar({ activeSection, handleSectionChange }) {
           </a>
         </div>
         {/* hamburger menu */}
-        <div className="navbar-end lg:hidden fixed top-0 right-0 z-50 m-4">
+        <div className="navbar-end lg:hidden  m-4">
+          {!dropdownOpen && (
           <button className="btn btn-ghost" onClick={toggleDropdown}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -51,6 +52,7 @@ export default function NavBar({ activeSection, handleSectionChange }) {
               />
             </svg>
           </button>
+          )}
           <ul
             className={`menu dropdown-content mt-3 p-2 shadow rounded-box w-52
             ${dropdownOpen ? "block" : "hidden"}`}
