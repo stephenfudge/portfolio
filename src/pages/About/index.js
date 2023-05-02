@@ -3,7 +3,7 @@ import { useWindowSize } from "react-use";
 
 export default function About() {
   const { width } = useWindowSize();
-  const imageWidth = width < 768 ? "w-2/3" : "w-1/3";
+  const imageWidth = width < 768 ? "w-2/3" : "w-5/8";
 
   return (
     <div className="container mx-auto px-4 md:px-10">
