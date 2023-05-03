@@ -1,7 +1,7 @@
 import "./about.css";
 import { useWindowSize } from "react-use";
 
-export default function About() {
+export default function About({isDark}) {
   const { width } = useWindowSize();
   const imageWidth = width < 768 ? "w-2/3" : "w-5/8";
 
@@ -26,7 +26,7 @@ export default function About() {
         </div>
       )}
       <div className="col-span-1 flex items-center justify-center">
-        <div className="text-center text-cyclamen ">
+        <div className="text-center ">
           <p className="flex items-center justify-center h-full">
             Hey hey, I'm Stephen Fudge a talented and experienced software
             developer with a Full Stack Web Development Certificate from the
@@ -45,5 +45,5 @@ export default function About() {
       </div>
     </div>
   </div>
-  );
+);
 }
