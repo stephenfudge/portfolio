@@ -4,14 +4,19 @@ module.exports = {
   darkMode: "class",
   theme: {
     colors: {
+      grey: "#121212",
       persian: "#320d6dff",
       rose: "#e365c1ff",
       ghost: "#f7f7ffff",
       smoky: "#070600ff",
       caribbean: "#0f7173ff",
-      oxford: "#191d32ff",
       cyclamen: "#f2699dff",
       lightpink: "#ffccff",
+      deep: "#ff1493ff",
+      violet: "#9400d3ff",
+      purple: "#ba55d3ff",
+      lightpurple: "#bf80ff",
+      navy: "#00008bff",
     },
     extend: {
       fontFamily: {
