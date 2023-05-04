@@ -24,7 +24,9 @@ function App() {
           activeSection={activeSection}
           handleSectionChange={handleSectionChange}
         />
+        <div className="text-left">
         <ThemeToggle isDark={isDark} setIsDark={setIsDark} />
+        </div>
         <main className="container mx-auto mt-8 ">
           {activeSection === "about" && <About />}
           {activeSection === "projects" && <Projects />}
