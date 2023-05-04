@@ -39,7 +39,7 @@ export default function Contact() {
               <div>
                 <label
                   for="name"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-sm font-medium"
                 >
                   Name
                 </label>
@@ -49,7 +49,7 @@ export default function Contact() {
                     name="from_name"
                     type="name"
                     required
-                    className="w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500"
+                    className="w-full border border-purple dark:border-lightpink px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-lightpurple focus:ring-1 focus:ring-lightpurple"
                   />
                 </div>
               </div>
@@ -57,7 +57,7 @@ export default function Contact() {
               <div>
                 <label
                   for="email"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-sm font-medium"
                 >
                   Email address
                 </label>
@@ -67,7 +67,7 @@ export default function Contact() {
                     name="reply_to"
                     type="email"
                     required
-                    className="w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500"
+                    className="w-full border border-purple dark:border-lightpink px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-lightpurple focus:ring-1 focus:ring-lightpurple"
                   />
                 </div>
               </div>
@@ -75,9 +75,9 @@ export default function Contact() {
               <div>
                 <label
                   for="message"
-                  className="block text-sm font-medium text-gray-700"
+                  className="block text-sm font-medium"
                 >
-                  Enter a Message:
+                  Enter a Message
                 </label>
                 <div className="mt-1">
                   <textarea
@@ -85,7 +85,7 @@ export default function Contact() {
                     name="message"
                     type="message"
                     required
-                    className="w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500"
+                    className="w-full border border-purple dark:border-lightpink px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-lightpurple focus:ring-1 focus:ring-lightpurple"
                   />
                 </div>
               </div>
@@ -93,7 +93,7 @@ export default function Contact() {
               <div>
                 <button
                   type="submit"
-                  className="w-full flex justify-center py-2 px-4 border rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  className="w-full flex justify-center py-2 px-4 border rounded-md shadow-sm text-sm font-medium text-navy dark:text-rose"
                   value="send"
                 >
                   Submit
