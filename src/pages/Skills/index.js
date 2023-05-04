@@ -1,10 +1,15 @@
-export default function Skills () {
+export default function Skills() {
   return (
-    <div className="flex flex-col items-center justify-center py-16 bg-gray-100">
-      <h2 className="text-3xl font-bold mb-8">Skills</h2>
+    <div className="flex flex-col items-center justify-center py-16">
+      <h2 className="text-3xl font-bold mb-8 text-violet dark:text-lightpurple">
+        Skills
+      </h2>
+      {/* card for frontend skills */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div className="bg-white rounded-lg shadow-lg p-6">
-          <h3 className="text-xl font-bold mb-2">Frontend</h3>
+          <h3 className="text-xl text-navy dark:text-lightpink font-bold mb-2">
+            Frontend
+          </h3>
           <ul className="list-disc list-inside">
             <li>React</li>
             <li>Next.js</li>
@@ -20,8 +25,11 @@ export default function Skills () {
             <li>Responsive Design</li>
           </ul>
         </div>
+        {/* card for backend skills */}
         <div className="bg-white rounded-lg shadow-lg p-6">
-          <h3 className="text-xl font-bold mb-2">Backend</h3>
+          <h3 className="text-xl text-navy dark:text-lightpink font-bold mb-2">
+            Backend
+          </h3>
           <ul className="list-disc list-inside">
             <li>Node.js</li>
             <li>Express.js</li>
@@ -33,8 +41,11 @@ export default function Skills () {
             <li>Serverless Architecture</li>
           </ul>
         </div>
+        {/* card for other skills */}
         <div className="bg-white rounded-lg shadow-lg p-6">
-          <h3 className="text-xl font-bold mb-2">Other</h3>
+          <h3 className="text-xl text-navy dark:text-lightpink font-bold mb-2">
+            Other
+          </h3>
           <ul className="list-disc list-inside">
             <li>Git (including GitHub)</li>
             <li>Webpack/Babel</li>
@@ -43,10 +54,10 @@ export default function Skills () {
             <li>Project Management</li>
             <li>Communication Skills</li>
             <li>Problem Solving</li>
-            <li>Heroku/Vercel or other hosting platforms</li>
+            <li>Heroku and Vercel hosting platforms</li>
           </ul>
         </div>
       </div>
     </div>
   );
-};
+}
