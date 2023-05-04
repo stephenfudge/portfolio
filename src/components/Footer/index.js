@@ -14,7 +14,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon icon={faGithub} size="4x" className="icons" />
+              <FontAwesomeIcon icon={faGithub} size="4x" className="icons text-rose hover:text-deep" />
             </a>
           </li>
           <li>
@@ -23,7 +23,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon icon={faLinkedin} size="4x" className="icons" />
+              <FontAwesomeIcon icon={faLinkedin} size="4x" className="icons text-rose hover:text-deep" />
             </a>
           </li>
         </ul>

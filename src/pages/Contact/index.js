@@ -93,7 +93,7 @@ export default function Contact() {
               <div>
                 <button
                   type="submit"
-                  className="w-full flex justify-center py-2 px-4 border rounded-md shadow-sm text-sm font-medium text-navy dark:text-rose"
+                  className="w-full flex justify-center py-2 px-4 border rounded-md shadow-sm text-sm font-medium text-navy dark:text-lightpink"
                   value="send"
                 >
                   Submit
