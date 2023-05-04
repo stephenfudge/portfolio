@@ -28,7 +28,11 @@ export default function NavBar({ activeSection, handleSectionChange }) {
             href="/"
             className="btn btn-ghost normal-case text-xl text-secondary name"
           >
-            <animated.span style={slideInAnimation} className="font-name text-2xl lg:text-4xl">
+            {/* name/logo  */}
+            <animated.span
+              style={slideInAnimation}
+              className="font-name text-2xl lg:text-5xl text-rose"
+            >
               Stephen Fudge
             </animated.span>
           </a>
@@ -36,22 +40,22 @@ export default function NavBar({ activeSection, handleSectionChange }) {
         {/* hamburger menu */}
         <div className="navbar-end lg:hidden  m-4">
           {!dropdownOpen && (
-          <button className="btn btn-ghost" onClick={toggleDropdown}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
-          </button>
+            <button className="btn btn-ghost" onClick={toggleDropdown}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </button>
           )}
           <ul
             className={`menu dropdown-content mt-3 p-2 shadow rounded-box w-52
@@ -77,7 +81,9 @@ export default function NavBar({ activeSection, handleSectionChange }) {
             <li className="px-2">
               <button
                 className={`px- py-1 rounded-lg text-sm font-medium border ${
-                  activeSection === "about" ? "text-success" : "text-gray-700"
+                  activeSection === "about"
+                    ? "text-navy dark:text-deep"
+                    : "text-rose"
                 }`}
                 onClick={() => handleSectionChange("about")}
               >
@@ -88,18 +94,20 @@ export default function NavBar({ activeSection, handleSectionChange }) {
               <button
                 className={`px-2 py-1 rounded-lg text-sm font-medium border ${
                   activeSection === "projects"
-                    ? "text-success"
-                    : "text-gray-700"
+                    ? "text-navy dark:text-deep"
+                    : "text-rose"
                 }`}
                 onClick={() => handleSectionChange("projects")}
               >
                 Projects
               </button>
             </li>
-             <li className="px-2">
-               <button
+            <li className="px-2">
+              <button
                 className={`px-2 py-1 rounded-lg text-sm font-medium border ${
-                  activeSection === "skills" ? "text-success" : "text-gray-700"
+                  activeSection === "skills"
+                    ? "text-navy dark:text-deep"
+                    : "text-rose"
                 }`}
                 onClick={() => handleSectionChange("skills")}
               >
@@ -109,7 +117,9 @@ export default function NavBar({ activeSection, handleSectionChange }) {
             <li className="px-2">
               <button
                 className={`px-2 py-1 rounded-lg text-sm font-medium border ${
-                  activeSection === "contact" ? "text-success" : "text-gray-700"
+                  activeSection === "contact"
+                    ? "text-navy dark:text-deep"
+                    : "text-rose"
                 }`}
                 onClick={() => handleSectionChange("contact")}
               >
