@@ -3,22 +3,23 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   darkMode: "class",
   theme: {
-    colors: {
-      grey: "#121212",
-      persian: "#320d6dff",
-      rose: "#e365c1ff",
-      ghost: "#f7f7ffff",
-      smoky: "#070600ff",
-      caribbean: "#0f7173ff",
-      cyclamen: "#f2699dff",
-      lightpink: "#ffccff",
-      deep: "#ff1493ff",
-      violet: "#9400d3ff",
-      purple: "#ba55d3ff",
-      lightpurple: "#bf80ff",
-      navy: "#00008bff",
-    },
     extend: {
+      colors: {
+        grey: "#121212",
+        persian: "#320d6dff",
+        rose: "#e365c1ff",
+        ghost: "#f7f7ffff",
+        smoky: "#070600ff",
+        caribbean: "#0f7173ff",
+        cyclamen: "#f2699dff",
+        lightpink: "#ffccff",
+        deep: "#ff1493ff",
+        violet: "#9400d3ff",
+        purple: "#ba55d3ff",
+        lightpurple: "#bf80ff",
+        navy: "#00008bff",
+      },
+
       fontFamily: {
         sans: ["Inter", "sans-serif"],
         name: ["Indie Flower", "curisve"],
