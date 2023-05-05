@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faExternalLinkAlt} from '@fortawesome/free-solid-svg-icons';
+
 // project card to be reused in index.js 
 export default function ProjectCard(props) {
   return (
@@ -34,13 +37,13 @@ export default function ProjectCard(props) {
                 rel="noopener noreferrer"
               >
                 <button className="border rounded-xl px-0.5 py-1 mr-2 text-navy dark:text-rose">
-                  See it live!
+                  See it live! <FontAwesomeIcon icon={faExternalLinkAlt}  />
                 </button>
               </a>
               <br />
               <a href={props.repo} target="_blank" rel="noopener noreferrer">
                 <button className="border rounded-xl px-2 py-1 ml-1 text-navy dark:text-rose">
-                  View the GitHub repository!
+                  View the GitHub repository! <FontAwesomeIcon icon={faExternalLinkAlt}  />
                 </button>
               </a>
             </div>
