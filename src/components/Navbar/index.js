@@ -24,10 +24,7 @@ export default function NavBar({ activeSection, handleSectionChange }) {
     <div className="py-5">
       <div className="navbar lg:space-between">
         <div className="navbar-start">
-          <a
-            href="/"
-            className="btn btn-ghost normal-case text-xl text-secondary name"
-          >
+          <a href="/" className="btn btn-ghost normal-case">
             {/* name/logo  */}
             <animated.span
               style={slideInAnimation}
@@ -58,7 +55,7 @@ export default function NavBar({ activeSection, handleSectionChange }) {
             </button>
           )}
           <ul
-            className={`menu dropdown-content mt-3 p-2 shadow rounded-box w-52
+            className={`menu dropdown-content mt-3 p-2 rounded-box w-52
             ${dropdownOpen ? "block" : "hidden"}`}
           >
             <li id="about" onClick={() => handleDropdownClick("about")}>
@@ -77,10 +74,10 @@ export default function NavBar({ activeSection, handleSectionChange }) {
         </div>
         {/* links for larger screens */}
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal text-rose  px-1">
+          <ul className="menu menu-horizontal text-rose font-lato font-bold px-1">
             <li className="px-2">
               <button
-                className={`px- py-1 rounded-lg text-sm font-medium border ${
+                className={`px- py-1 rounded-lg border border-rose ${
                   activeSection === "about"
                     ? "text-navy dark:text-deep"
                     : "text-rose"
@@ -92,7 +89,7 @@ export default function NavBar({ activeSection, handleSectionChange }) {
             </li>
             <li className="px-2">
               <button
-                className={`px-2 py-1 rounded-lg text-sm font-medium border ${
+                className={`px-2 py-1 rounded-lg border border-rose ${
                   activeSection === "projects"
                     ? "text-navy dark:text-deep"
                     : "text-rose"
@@ -104,19 +101,19 @@ export default function NavBar({ activeSection, handleSectionChange }) {
             </li>
             <li className="px-2">
               <button
-                className={`px-2 py-1 rounded-lg text-sm font-medium border ${
+                className={`px-2 py-1 rounded-lg border border-rose ${
                   activeSection === "skills"
                     ? "text-navy dark:text-deep"
                     : "text-rose"
                 }`}
                 onClick={() => handleSectionChange("skills")}
               >
-                Skills
+                Skills 
               </button>
             </li>
             <li className="px-2">
               <button
-                className={`px-2 py-1 rounded-lg text-sm font-medium border ${
+                className={`px-2 py-1 rounded-lg border border-rose ${
                   activeSection === "contact"
                     ? "text-navy dark:text-deep"
                     : "text-rose"

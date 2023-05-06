@@ -27,7 +27,7 @@ export default function Footer() {
             </a>
           </li>
         </ul>
-        <p className="pb-10 mb-9"id="arr">&copy; {new Date().getFullYear()} Stephen Fudge. All Rights Reserved.</p>
+        <p className="pb-10 mb-9">&copy; {new Date().getFullYear()} Stephen Fudge. All Rights Reserved.</p>
       </div>
     </footer>
   );

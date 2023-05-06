@@ -32,14 +32,14 @@ export default function Contact() {
       <div className="pt-3 flex flex-col justify-center px-6 lg:px-8">
         <h1>Fill out the form below to Contact Me</h1>
 
-        <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-          <div className="bg-gray-100 py-8 px-6 shadow rounded-lg sm:px-10">
+        <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md dark:bg-gray-900">
+          <div className="py-8 px-6 shadow rounded-lg sm:px-10">
             <form className="mb-0 space-y-6" ref={form} onSubmit={sendEmail}>
               {/* Name section required */}
               <div>
                 <label
                   for="name"
-                  className="block text-sm font-medium"
+                  className="block font-medium"
                 >
                   Name
                 </label>
@@ -57,7 +57,7 @@ export default function Contact() {
               <div>
                 <label
                   for="email"
-                  className="block text-sm font-medium"
+                  className="block font-medium"
                 >
                   Email address
                 </label>
@@ -75,7 +75,7 @@ export default function Contact() {
               <div>
                 <label
                   for="message"
-                  className="block text-sm font-medium"
+                  className="block font-medium"
                 >
                   Enter a Message
                 </label>
@@ -93,7 +93,7 @@ export default function Contact() {
               <div>
                 <button
                   type="submit"
-                  className="w-full flex justify-center py-2 px-4 border rounded-md shadow-sm text-sm font-medium text-navy dark:text-lightpink"
+                  className="w-full flex justify-center py-2 px-4 border rounded-md shadow-sm font-medium text-navy dark:text-lightpink hover:text-deep dark:hover:text-deep"
                   value="send"
                 >
                   Submit
