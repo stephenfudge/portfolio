@@ -18,7 +18,7 @@ function App() {
   };
 
   return (
-    <div className="App min-h-screen bg-ghost dark:bg-grey text-smoky dark:text-ghost">
+    <div className="App min-h-screen bg-ghost dark:bg-grey text-smoky dark:text-ghost font-lato">
       <div className="container mx-auto p-4">
         <Navbar
           activeSection={activeSection}

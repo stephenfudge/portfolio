@@ -21,8 +21,8 @@ module.exports = {
       },
 
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
         name: ["Indie Flower", "curisve"],
+        lato: ['Lato', 'sans-serif'],
       },
     },
   },
