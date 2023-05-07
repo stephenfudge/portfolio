@@ -6,12 +6,10 @@ module.exports = {
     extend: {
       colors: {
         grey: "#121212",
-        persian: "#320d6dff",
         rose: "#e365c1ff",
         ghost: "#f7f7ffff",
         smoky: "#070600ff",
         caribbean: "#0f7173ff",
-        cyclamen: "#f2699dff",
         lightpink: "#ffccff",
         deep: "#ff1493ff",
         violet: "#9400d3ff",
@@ -22,7 +20,7 @@ module.exports = {
 
       fontFamily: {
         name: ["Indie Flower", "curisve"],
-        lato: ['Lato', 'sans-serif'],
+        lato: ["Lato", "sans-serif"],
       },
     },
   },
