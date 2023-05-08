@@ -6,7 +6,7 @@ export default function About({isDark}) {
   const imageWidth = width < 768 ? "w-2/3" : "w-5/8";
 
   return (
-    <div className="container mx-auto px-4 md:px-10">
+    <div className="container mx-auto px-4 md:px-10" data-testid="about-section">
     <div className="grid grid-cols-1 gap-2 py-14 md:grid-cols-2">
       {width < 768 ? (
         <div className="flex items-center justify-center">

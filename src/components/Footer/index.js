@@ -5,7 +5,7 @@ import "./footer.css";
 
 export default function Footer() {
   return (
-    <footer className=" py-10">
+    <footer className=" py-10" data-testid="footer">
       <div className="justify-center">
         <ul className="social-icons">
           <li>
@@ -13,8 +13,9 @@ export default function Footer() {
               href="https://github.com/stephenfudge"
               target="_blank"
               rel="noopener noreferrer"
+              data-testid="github-link"
             >
-              <FontAwesomeIcon icon={faGithub} size="4x" className="icons text-rose hover:text-deep" />
+              <FontAwesomeIcon icon={faGithub} size="4x" className="icons text-rose hover:text-deep" data-testid="github-icon" />
             </a>
           </li>
           <li>
@@ -22,8 +23,9 @@ export default function Footer() {
               href="https://www.linkedin.com/in/stephenfudge"
               target="_blank"
               rel="noopener noreferrer"
+              data-testid="linkedin-link"
             >
-              <FontAwesomeIcon icon={faLinkedin} size="4x" className="icons text-rose hover:text-deep" />
+              <FontAwesomeIcon icon={faLinkedin} size="4x" className="icons text-rose hover:text-deep" data-testid="linkedin-icon"/>
             </a>
           </li>
         </ul>

@@ -21,7 +21,7 @@ export default function NavBar({ activeSection, handleSectionChange }) {
   };
 
   return (
-    <div className="py-5">
+    <div className="py-5" data-testid="navigation">
       <div className="navbar lg:space-between">
         <div className="navbar-start">
           <a href="/" className="btn btn-ghost normal-case">
