@@ -61,13 +61,13 @@ export default function NavBar({ activeSection, handleSectionChange }) {
             <li id="about" onClick={() => handleDropdownClick("about")}>
               About Me
             </li>
-            <li id="projects" onClick={() => handleDropdownClick("projects")}>
+            <li id="projects" data-testid="projects-button-small" onClick={() => handleDropdownClick("projects")}>
               Projects
             </li>
-            <li id="resume" onClick={() => handleDropdownClick("skills")}>
+            <li id="skills" data-testid="skills-button-small" onClick={() => handleDropdownClick("skills")}>
               Skills
             </li>
-            <li id="contact" onClick={() => handleDropdownClick("contact")}>
+            <li id="contact" data-testid="contact-button-small" onClick={() => handleDropdownClick("contact")}>
               Contact Me
             </li>
           </ul>
@@ -94,6 +94,7 @@ export default function NavBar({ activeSection, handleSectionChange }) {
                     ? "text-navy dark:text-deep"
                     : "text-rose"
                 }`}
+                data-testid="projects-button-large"
                 onClick={() => handleSectionChange("projects")}
               >
                 Projects
@@ -106,6 +107,7 @@ export default function NavBar({ activeSection, handleSectionChange }) {
                     ? "text-navy dark:text-deep"
                     : "text-rose"
                 }`}
+                data-testid="skills-button-large"
                 onClick={() => handleSectionChange("skills")}
               >
                 Skills 
@@ -118,6 +120,7 @@ export default function NavBar({ activeSection, handleSectionChange }) {
                     ? "text-navy dark:text-deep"
                     : "text-rose"
                 }`}
+                data-testid="contact-button-large"
                 onClick={() => handleSectionChange("contact")}
               >
                 Contact Me

@@ -30,8 +30,8 @@ function App() {
         <main className="container mx-auto mt-8 ">
           {activeSection === "about" && <About />}
           {activeSection === "projects" && <Projects />}
-          {activeSection === "contact" && <Contact />}
           {activeSection === "skills" && <Skills />}
+          {activeSection === "contact" && <Contact />}
         </main>
         <Footer />
       </div>

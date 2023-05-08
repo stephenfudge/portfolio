@@ -1,6 +1,6 @@
 export default function Skills() {
   return (
-    <div className="flex flex-col items-center justify-center py-16">
+    <div className="flex flex-col items-center justify-center py-16" data-testid="skills-section">
       <h2 className="text-3xl font-bold mb-8 text-violet dark:text-lightpurple">
         Skills
       </h2>

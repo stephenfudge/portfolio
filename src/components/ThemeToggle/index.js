@@ -26,6 +26,7 @@ const ThemeToggle = () => {
     <button
       onClick={toggleTheme}
       className="bg-light-bg dark:bg-dark-bg  px-4 py-2 rounded border border-caribbean w-auto sm:w-24 text-yellow-500"
+      data-testid="theme-toggle-button"
     >
       {isDark ? (
         <FontAwesomeIcon icon={faSun} size="lg" />

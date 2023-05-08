@@ -1,4 +1,3 @@
-import "./about.css";
 import { useWindowSize } from "react-use";
 
 export default function About({isDark}) {
