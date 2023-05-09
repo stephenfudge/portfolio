@@ -9,19 +9,16 @@ export default function Contact() {
   const form = useRef();
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(serviceId, templateId, form.current, publics).then(
-      (result) => {
-        console.log(result.text);
-        form.current.reset();
-        setIsSubmitted(true);
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
+    try {
+      await emailjs.sendForm(serviceId, templateId, form.current, publics);
+      form.current.reset();
+      setIsSubmitted(true);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   const closePopup = () => {
@@ -37,10 +34,7 @@ export default function Contact() {
             <form className="mb-0 space-y-6" ref={form} onSubmit={sendEmail}>
               {/* Name section required */}
               <div>
-                <label
-                  for="name"
-                  className="block font-medium"
-                >
+                <label htmlFor="name" className="block font-medium">
                   Name
                 </label>
                 <div className="mt-1">
@@ -55,10 +49,7 @@ export default function Contact() {
               </div>
               {/* Email section required */}
               <div>
-                <label
-                  for="email"
-                  className="block font-medium"
-                >
+                <label htmlFor="email" className="block font-medium">
                   Email address
                 </label>
                 <div className="mt-1">
@@ -73,10 +64,7 @@ export default function Contact() {
               </div>
               {/* Message section required */}
               <div>
-                <label
-                  for="message"
-                  className="block font-medium"
-                >
+                <label htmlFor="message" className="block font-medium">
                   Enter a Message
                 </label>
                 <div className="mt-1">
