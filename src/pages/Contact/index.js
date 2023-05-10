@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import Modal from "../../components/Modal";
 
 const serviceId = "service_ub0s3l9";
 const templateId = "template_2k96jkk";
@@ -8,6 +9,7 @@ const publics = "S8toVAtI8-CrPQEjy";
 export default function Contact() {
   const form = useRef();
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const sendEmail = async (e) => {
     e.preventDefault();
@@ -16,14 +18,24 @@ export default function Contact() {
       await emailjs.sendForm(serviceId, templateId, form.current, publics);
       form.current.reset();
       setIsSubmitted(true);
+      openModal();
     } catch (error) {
       console.log(error);
     }
   };
-
   const closePopup = () => {
     setIsSubmitted(false);
+    closeModal();
   };
+
+  const openModal = () => {
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+  };
+
   return (
     <div>
       <div className="pt-3 flex flex-col justify-center px-6 lg:px-8">
@@ -89,12 +101,7 @@ export default function Contact() {
               </div>
             </form>
           </div>
-          {isSubmitted && (
-            <div className="">
-              <p>Form submitted</p>
-              <button onClick={closePopup}>Close</button>
-            </div>
-          )}
+          {isSubmitted && <Modal isOpen={isOpen} closeModal={closePopup} data-testid="modal"/>}
         </div>
       </div>
     </div>
