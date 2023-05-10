@@ -29,6 +29,7 @@ export default function NavBar({ activeSection, handleSectionChange }) {
             <animated.span
               style={slideInAnimation}
               className="font-name text-2xl lg:text-5xl text-rose"
+              data-testid="name"
             >
               Stephen Fudge
             </animated.span>
@@ -37,7 +38,7 @@ export default function NavBar({ activeSection, handleSectionChange }) {
         {/* hamburger menu */}
         <div className="navbar-end lg:hidden  m-4">
           {!dropdownOpen && (
-            <button className="btn btn-ghost" onClick={toggleDropdown}>
+            <button className="btn btn-ghost" onClick={toggleDropdown} data-testid="hamburger-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -55,6 +56,7 @@ export default function NavBar({ activeSection, handleSectionChange }) {
             </button>
           )}
           <ul
+          data-testid="hamburger-menu"
             className={`menu dropdown-content mt-3 p-2 rounded-box w-52
             ${dropdownOpen ? "block" : "hidden"}`}
           >
@@ -82,6 +84,7 @@ export default function NavBar({ activeSection, handleSectionChange }) {
                     ? "text-navy dark:text-deep"
                     : "text-rose"
                 }`}
+                data-testid="about-button-large"
                 onClick={() => handleSectionChange("about")}
               >
                 About Me
