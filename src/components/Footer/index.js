@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className=" py-10" data-testid="footer">
       <div className="justify-center">
-        <ul className="social-icons">
+        <ul className="social-icons py-3">
           <li>
             <a
               href="https://github.com/stephenfudge"
