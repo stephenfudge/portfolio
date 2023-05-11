@@ -60,7 +60,7 @@ export default function NavBar({ activeSection, handleSectionChange }) {
             className={`menu dropdown-content mt-3 p-2 rounded-box w-52
             ${dropdownOpen ? "block" : "hidden"}`}
           >
-            <li id="about" onClick={() => handleDropdownClick("about")}>
+            <li id="about" data-testid="about-button-small" onClick={() => handleDropdownClick("about")}>
               About Me
             </li>
             <li id="projects" data-testid="projects-button-small" onClick={() => handleDropdownClick("projects")}>
