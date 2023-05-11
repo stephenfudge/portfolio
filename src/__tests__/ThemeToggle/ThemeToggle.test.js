@@ -1,50 +1,6 @@
 import { render, fireEvent, act } from "@testing-library/react";
 import ThemeToggle from "../../components/ThemeToggle";
 
-// describe("ThemeToggle", () => {
-//   beforeEach(() => {
-//     localStorage.clear();
-//   });
-
-//   it("should render the component", () => {
-//     const { getByTestId } = render(<ThemeToggle />);
-//     expect(getByTestId("theme-toggle-button")).toBeInTheDocument();
-//   });
-
-//   it("should set the initial theme based on local storage", () => {
-//     localStorage.setItem("isDarkMode", "true");
-//     act(() => {
-//       render(<ThemeToggle />);
-//     });
-//     expect(document.documentElement.classList.contains("dark")).toBe(true);
-//   });
-
-//   it("should toggle the theme when clicked", () => {
-//     const { getByTestId } = render(<ThemeToggle />);
-//     const button = getByTestId("theme-toggle-button");
-//     act(() => {
-//       fireEvent.click(button);
-//     });
-//     expect(document.documentElement.classList.contains("dark")).toBe(false);
-//     act(() => {
-//       fireEvent.click(button);
-//     });
-//     expect(document.documentElement.classList.contains("dark")).toBe(true);
-//   });
-
-//   it("should set local storage when the theme is toggled", () => {
-//     const { getByTestId } = render(<ThemeToggle />);
-//     const button = getByTestId("theme-toggle-button");
-//     fireEvent.click(button);
-//     expect(localStorage.getItem("isDarkMode")).toBe("true");
-//     fireEvent.click(button);
-//     expect(localStorage.getItem("isDarkMode")).toBe("false");
-//   });
-// });
-
-
-
-
 describe("ThemeToggle", () => {
   // Clears the localStorage before each test
   beforeEach(() => {
