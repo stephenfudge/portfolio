@@ -34,9 +34,11 @@ My portfolio includes the following features:
 The website design features a sleek and modern aesthetic, with a focus on showcasing the web developer's portfolio and skills. The color scheme is primarily black, white, and shades of grey, with pops of pink, purple and blue for added visual interest. The layout is optimized for both desktop and mobile devices, and includes a light and dark mode to enhance user experience.
 
 This is at a laptop screen size in light mode
+
 <img src="./public/images/screenshots/desktop-light.png" width="600"  alt="Personal Portfolio light at a laptop screen size"> 
 
 This is at a mobile screen size in dark mode
+
 <img src="./public/images/screenshots/mobile-dark.png" width="450"  alt="Personal Portfolio dark mode at a mobile screen size">
 
 ## Testing
